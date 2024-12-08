@@ -3,110 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Manish Kumar Vishwakarma</title>
+    <meta name="description" content="Manish Kumar Vishwakarma - Senior Software Engineer">
+    <title>Manish Kumar Vishwakarma - Senior Software Engineer</title>
     <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            color: #f0f0f0;
-            background-color: #121212;
-            margin: 20px;
+            color: #333;
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+            padding: 10px;
         }
-        h1, h2 {
-            color: #4CAF50;
+
+        /* Header Section */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
-        a {
-            color: #4CAF50;
-            text-decoration: none;
+
+        header h1 {
+            font-size: 2.4em;
+            margin-bottom: 5px;
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
+
+        header p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        header .contact-info {
+            font-size: 0.9em;
+        }
+
+        /* Main Content Styling */
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
             padding: 20px;
-            border: 1px solid #333;
-            background-color: #1e1e1e;
+            background: #fff;
             border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .section {
+
+        section {
             margin-bottom: 20px;
         }
-        .section-title {
-            font-size: 1.4em;
+
+        section h2 {
+            border-bottom: 2px solid #333;
             margin-bottom: 10px;
-            text-decoration: underline;
+            padding-bottom: 5px;
+            color: #333;
         }
+
+        /* Tables for Experience & Projects */
         table {
             width: 100%;
+            border: 1px solid #ddd;
             border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        table th, table td {
-            border: 1px solid #333;
-            padding: 8px;
-            text-align: left;
-            color: #f0f0f0;
-        }
-        table th {
-            background-color: #333;
-        }
-        .skill {
-            display: flex;
-            align-items: center;
             margin-bottom: 10px;
         }
-        .skill img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
+
+        table th,
+        table td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background: #333;
+            color: #fff;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            table th,
+            table td {
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+
+    <!-- Header Section -->
+    <header>
         <h1>Manish Kumar Vishwakarma</h1>
-        <p><strong>Senior Software Engineer</strong></p>
-        <p>Contact No: 8269991240 | Email: <a href="mailto:manish.vishwakarma@infinite.com">manish.vishwakarma@infinite.com</a></p>
+        <p class="contact-info">
+            Senior Software Engineer | <a href="mailto:manish.vishwakarma@infinite.com" style="color: #fff;">manish.vishwakarma@infinite.com</a> |
+            Mobile: 8269991240
+        </p>
+    </header>
 
-        <div class="section">
-            <h2 class="section-title">Experience Summary</h2>
-            <p>4.5+ years of experience as a Software Engineer specializing in development, documentation, deployment, integration, and maintenance of web-based and client/server applications. Proficient in Java, Spring Boot, Microservices with AWS, and frameworks like Spring MVC, RESTful services, and Hibernate/JPA.</p>
-        </div>
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Experience Summary Section -->
+        <section>
+            <h2>Experience Summary</h2>
+            <p>
+                Overall 4.5+ Years of Working Experience as a Software Engineer in Development, Documentation, Deployment, Integration, and Maintenance of Web Based and Client/Server Applications using Java J2EE Technologies, Spring Boot, Microservices with AWS, Spring MVC, Restful Services (JAX-RS), and Hibernate/JPA.
+            </p>
+        </section>
 
-        <div class="section">
-            <h2 class="section-title">Educational Qualifications</h2>
-            <ul>
-                <li><strong>Bachelor of Engineering:</strong> Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal (2014)</li>
-                <li><strong>12th Standard:</strong> Board of Secondary Education Madhya Pradesh (2009)</li>
-                <li><strong>10th Standard:</strong> Board of Secondary Education Madhya Pradesh (2007)</li>
-            </ul>
-        </div>
+        <!-- Education Section -->
+        <section>
+            <h2>Educational Qualifications</h2>
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Board/University</th>
+                    <th>Institution</th>
+                    <th>Year of Passing</th>
+                </tr>
+                <tr>
+                    <td>10th</td>
+                    <td>Board of Secondary Education Madhya Pradesh</td>
+                    <td>Radha Krishna Modi SVM H.S.School, Sehore (M.P.)</td>
+                    <td>2007</td>
+                </tr>
+                <tr>
+                    <td>12th</td>
+                    <td>Board of Secondary Education Madhya Pradesh</td>
+                    <td>Radha Krishna Modi SVM H.S.School, Sehore (M.P.)</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>Bachelor of Engineering</td>
+                    <td>Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal</td>
+                    <td>Technocrats Institute of Technology (Excellence)</td>
+                    <td>2014</td>
+                </tr>
+            </table>
+        </section>
 
-        <div class="section">
-            <h2 class="section-title">Skills</h2>
-            <div class="skill">
-                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java Logo">
-                <p><strong>Java:</strong> Robust programming language used for building scalable, secure applications.</p>
-            </div>
-            <div class="skill">
-                <img src="https://spring.io/images/spring-initializr-4291cc0115eb104348717b82161b4c2b.png" alt="Spring Boot Logo">
-                <p><strong>Spring Boot:</strong> Framework for creating stand-alone, production-ready applications.</p>
-            </div>
-            <div class="skill">
-                <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" alt="Hibernate Logo">
-                <p><strong>Hibernate:</strong> ORM tool simplifying database interactions in Java applications.</p>
-            </div>
-            <div class="skill">
-                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="AWS Logo">
-                <p><strong>AWS:</strong> Cloud platform for scalable computing, storage, and more.</p>
-            </div>
-            <div class="skill">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="SQL Logo">
-                <p><strong>PostgreSQL:</strong> Advanced open-source relational database system.</p>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">Employment History</h2>
+        <!-- Employment History Section -->
+        <section>
+            <h2>Employment History</h2>
             <table>
                 <tr>
                     <th>Company Name</th>
@@ -116,89 +172,60 @@
                 </tr>
                 <tr>
                     <td>Infinite</td>
-                    <td>Senior Software Engineer</td>
+                    <td>Sr. Software Engineer</td>
                     <td>14-May-2024</td>
                     <td>Present</td>
                 </tr>
                 <tr>
                     <td>Ltimindtree</td>
-                    <td>Senior Software Engineer</td>
+                    <td>Sr. Software Engineer</td>
                     <td>26-Jun-2022</td>
                     <td>25-Jan-2024</td>
                 </tr>
                 <tr>
-                    <td>Synechron Pvt Ltd</td>
+                    <td>Synechron Technologies Pvt. Ltd</td>
                     <td>Sr. Associate Technology</td>
                     <td>07-Oct-2021</td>
                     <td>15-Jun-2022</td>
                 </tr>
                 <tr>
-                    <td>Intelizign</td>
+                    <td>Intelizign Engineering Services</td>
                     <td>Software Engineer</td>
                     <td>23-Jan-2020</td>
                     <td>06-Oct-2021</td>
                 </tr>
             </table>
-        </div>
+        </section>
 
-        <div class="section">
-            <h2 class="section-title">Projects</h2>
-            <h3>Infinite</h3>
+        <!-- Projects Section -->
+        <section>
+            <h2>Projects</h2>
+            <h3>NOW RTPN</h3>
             <ul>
-                <li><strong>Project Name:</strong> NOW RTPN</li>
-                <li><strong>Duration:</strong> 6 Months</li>
                 <li><strong>Client:</strong> Fiserv</li>
-                <li><strong>Details:</strong> Payment Gateway</li>
-                <li><strong>Role:</strong> Development, Testing, Team Meetings</li>
-            </ul>
-
-            <h3>Ltimindtree</h3>
-            <ul>
-                <li><strong>Project Name:</strong> SYBASE TO ORACLE MIGRATION</li>
-                <li><strong>Duration:</strong> 1.5 Years</li>
-                <li><strong>Client:</strong> Citi</li>
-                <li><strong>Details:</strong> Migration and Enhancement</li>
-                <li><strong>Role:</strong> Development, Testing, Documentation</li>
-            </ul>
-
-            <h3>Synechron Pvt Ltd</h3>
-            <ul>
-                <li><strong>Project Name:</strong> TS Fluid</li>
                 <li><strong>Duration:</strong> 6 Months</li>
-                <li><strong>Client:</strong> HSBC</li>
-                <li><strong>Details:</strong> Streaming and Batch Data Pipelines</li>
-                <li><strong>Role:</strong> Testing</li>
+                <li><strong>Environment:</strong> Dev, UAT, CERT</li>
+                <li><strong>Team Size:</strong> 7</li>
+                <li><strong>Role:</strong> Sr. Software Engineer</li>
+                <li><strong>Responsibilities:</strong> Development, Testing, Participate in team meetings</li>
             </ul>
-
-            <h3>Intelizign</h3>
+            
+            <h3>SYBASE TO ORACLE MIGRATION</h3>
             <ul>
-                <li><strong>Project Name:</strong> Mindsphere</li>
-                <li><strong>Duration:</strong> 1.6 Years</li>
-                <li><strong>Client:</strong> Siemens</li>
-                <li><strong>Details:</strong> Industrial Automation</li>
-                <li><strong>Role:</strong> Development, Testing, Documentation</li>
+                <li><strong>Client:</strong> Citi</li>
+                <li><strong>Duration:</strong> 1.5 Years</li>
+                <li><strong>Environment:</strong> Dev, UAT, CERT</li>
+                <li><strong>Team Size:</strong> 6</li>
+                <li><strong>Role:</strong> Sr. Associate Technology</li>
+                <li><strong>Responsibilities:</strong> Development, Testing, Documentation</li>
             </ul>
-        </div>
+        </section>
+        
+    </main>
 
-        <div class="section">
-            <h2 class="section-title">Personal Information</h2>
-            <ul>
-                <li><strong>Date of Birth:</strong> 05-May-1992</li>
-                <li><strong>Gender:</strong> Male</li>
-                <li><strong>Nationality:</strong> Indian</li>
-                <li><strong>Marital Status:</strong> Married</li>
-                <li><strong>Languages Known:</strong> Hindi, English</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">Certifications</h2>
-            <ul>
-                <li><strong>Oracle Certified Java Programmer (OCJP):</strong> Certification demonstrating expertise in Java programming.</li>
-                <li><strong>AWS Certified Solutions Architect:</strong> Professional certification for designing scalable and reliable cloud solutions.</li>
-                <li><strong>Certified ScrumMaster (CSM):</strong> Agile certification showcasing ability to effectively manage Scrum teams.</li>
-            </ul>
-        </div>
-    </div>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Manish Kumar Vishwakarma. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
