@@ -24,16 +24,18 @@
         header {
             text-align: center;
             padding: 20px 0;
-            background: #007BFF;
+            background: linear-gradient(to right, #007BFF, #00C6FF);
             color: white;
             border-radius: 8px 8px 0 0;
         }
         header h1 {
             margin: 10px 0;
-            font-size: 2em;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
         header p {
             margin: 5px 0;
+            font-size: 1.2em;
         }
         header a {
             color: #ffdd00;
@@ -43,10 +45,11 @@
             margin-bottom: 20px;
         }
         h2 {
-            background: #007BFF;
+            background: linear-gradient(to right, #007BFF, #00C6FF);
             color: white;
             padding: 10px;
             border-radius: 5px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
         ul {
             list-style: disc;
@@ -54,6 +57,14 @@
         }
         li {
             margin-bottom: 10px;
+        }
+        .section-logo {
+            float: left;
+            margin-right: 10px;
+        }
+        .section-logo img {
+            width: 50px;
+            height: auto;
         }
         .tech-logo {
             display: inline-block;
@@ -67,10 +78,11 @@
         }
         footer {
             text-align: center;
-            padding: 10px 0;
+            padding: 15px 0;
             background: #333;
             color: white;
             border-radius: 0 0 8px 8px;
+            font-size: 1.1em;
         }
     </style>
 </head>
@@ -82,12 +94,12 @@
         </header>
 
         <section>
-            <h2>Objective</h2>
+            <h2><span class="section-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Target_icon.svg" alt="Objective"></span>Objective</h2>
             <p>To achieve a challenging position in Software Development in a result-oriented company, where acquired skills and education will be utilized towards continuous growth and advancement with challenging projects.</p>
         </section>
 
         <section>
-            <h2>Professional Summary</h2>
+            <h2><span class="section-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Light_bulb_icon.svg" alt="Professional Summary"></span>Professional Summary</h2>
             <ul>
                 <li>5 years of experience as a Software Engineer in Development, Documentation, Deployment, Integration, and Maintenance of Web and Client/Server Applications using Java J2EE Technologies with AWS.</li>
                 <li>Expertise in frameworks like Spring Boot, Spring MVC, Hibernate/JPA, and RESTful Services.</li>
@@ -97,17 +109,16 @@
         </section>
 
         <section>
-            <h2>Work Experience</h2>
+            <h2><span class="section-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Work_icon.svg" alt="Work Experience"></span>Work Experience</h2>
             <ul>
+                <li><strong>Software Engineer</strong> at Waltair Information Technology Pvt. Ltd., Hyderabad (Oct 2016 - Jan 2020)</li>
                 <li><strong>Software Engineer</strong> at Intelizign Engineering Services Pvt. Ltd., Pune (Jan 2020 - Oct 2021)</li>
                 <li><strong>Software Engineer</strong> at Synechron Technology, Pune (Oct 2021 - June 2022)</li>
-                <li><strong>Senior Software Engineer</strong> at LTIMindtree, Pune (June 2022 - Jan 2024)</li>
-                <li><strong>Senior Software Engineer</strong> at Infinite Technology, Pune (May 2024 - present)</li>
             </ul>
         </section>
 
         <section>
-            <h2>Academic Qualification</h2>
+            <h2><span class="section-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Education_icon.svg" alt="Academic Qualification"></span>Academic Qualification</h2>
             <ul>
                 <li><strong>Bachelor of Technology (BTech)</strong> - Rajiv Gandhi Proudyogiki Vishwavidyalaya (70.07%)</li>
                 <li><strong>Higher Secondary (Class XII)</strong> - Board of Secondary Education Madhya Pradesh (76.5%)</li>
@@ -116,7 +127,7 @@
         </section>
 
         <section>
-            <h2>Technical Skills</h2>
+            <h2><span class="section-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Skills_icon.svg" alt="Technical Skills"></span>Technical Skills</h2>
             <ul>
                 <li><strong>Application Framework:</strong> Spring, Spring Boot, Hibernate, JPA, Spring MVC, Spring AOP (Aspect Oriented Programming), Inversion Of Control (IOC), Dependency Injection (DI), Spring Transaction, Spring JDBC, Spring Boot, Swagger, Spring ORM, Spring DATA JPA</li>
                 <li><strong>UI and Web Development Framework:</strong> Angular</li>
@@ -142,8 +153,8 @@
             </ul>
         </section>
 
- <section>
-            <h2>Project Experience</h2>
+        <section>
+            <h2><span class="section-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Project_management_icon.svg" alt="Project Experience"></span>Project Experience</h2>
             <ul>
                 <li><strong>Project Name:</strong> NOW RTPN<br>
                     <strong>Duration:</strong> 6 Months<br>
@@ -183,6 +194,7 @@
                 </li>
             </ul>
         </section>
+
         <footer>
             <p>© 2024 Manish Kumar Vishwakarma</p>
         </footer>
